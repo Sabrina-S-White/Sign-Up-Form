@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+}
+
+html { 
+    background: url(./robert-keane-rlbG0p_nQOU-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftDiv {
+    height: 100%;   
+    width: 60%;
+    
+}
+
+.leftContent {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftContent footer p,
+.leftContent footer p a {
+    font-size: 0.6rem;
+}
+
+.leftFiller {
+    height: 40%;
+}
+
+.bannerDiv {
+    height: 4rem;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerDiv p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #fff;
+}
+
+.logoDiv {
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rightDiv {
+    height: 100%;
+    width: 40%;
+    background-color: rgba(255, 183, 3, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: rgb(33, 158, 188);
+ 
+    border-radius: 3px;
+    width: 100%;
+    padding: 50px;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+  
+  .formRow input[type='text'] {
+
+}
