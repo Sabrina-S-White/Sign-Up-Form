@@ -27,11 +27,11 @@
                 <div class="formContents">
                     <div class="formRow">
                         <label for="firstName">First name</label>
-                        <input id="firstName" name="first-name" type="text" placeholder="*Art"/>
+                        <input id="firstName" name="first-name" type="text" minlength="1" placeholder="*Art"/>
                     </div>
                     <div class="formRow">
                         <label for="lastName">Last name</label>
-                        <input id="lastName" name="first-name" type="text" placeholder="*Garfunkel"/>
+                        <input id="lastName" name="first-name" type="text" minlength='1' placeholder="*Garfunkel"/>
                     </div>
                     <div class="formRow">
                         <label for="email">Email</label>
@@ -39,15 +39,15 @@
                     </div>
                     <div class="formRow">
                         <label for="phoneNumb">Phone number</label>
-                        <input id="phoneNum" name="phone" type="tel" placeholder="*000-000-0000"/>
+                        <input id="phoneNum" name="phone" type="tel" pattern="^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$" placeholder="*000-000-0000"/>
                     </div>
                     <div class="formRow">
                         <label for="password">Password</label>
-                        <input id="password" name="password" type="password" placeholder="*"/>
+                        <input id="password" name="password" minlength="7" type="password" placeholder="* must be at least 7 characters"/>
                     </div>
                     <div class="formRow">
                         <label for="confirmPassword">Confirm your password</label>
-                        <input id="confirmPassword" name="confirmPassword" type="password" placeholder="*"/>
+                        <input id="confirmPassword" name="confirmPassword" minlength="7" type="password" placeholder="* please reenter your password"/>
                     </div>
                     <div class="formRow">
                         <button>Submit</button>
