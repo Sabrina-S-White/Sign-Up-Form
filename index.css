@@ -94,6 +94,7 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    gap: 2px;
 }
   
 .formRow input[type='text'],
@@ -101,8 +102,8 @@ img {
 .formRow input[type='tel'],
 .formRow input[type='password'] {
     background-color: #FFFFFF;
-    border: 1px solid #D6D9DC;
     border-radius: 3px;
+    border: none;
     padding: 7px;
     margin-bottom: 10px;
     font-size: 15px;
@@ -112,22 +113,24 @@ img {
 .formRow input[type='text']:focus,
 .formRow input[type='email']:focus,
 .formRow input[type='tel']:focus,
-.formRow input[type='password']:focus {
-    border: 2px solid rgb(49, 112, 204);
+.formRow input[type='password']:focus{
+    outline: 1px solid rgb(49, 112, 204);
+    box-shadow:3px 2px 5px gray;
+    
 }
 
 .formRow input[type='text']:valid,
 .formRow input[type='email']:valid,
 .formRow input[type='tel']:valid,
 .formRow input[type='password']:valid {
-    border: 2px solid green;
+    border: 1px solid green;
 }
 
 .formRow input[type='text']:invalid,
 .formRow input[type='email']:invalid,
 .formRow input[type='tel']:invalid,
 .formRow input[type='password']:invalid {
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 button {
@@ -142,4 +145,13 @@ button:hover {
     background-color: #8AAFE3;
     color: #fff;
     cursor: pointer;
+}
+
+.login {
+    font-size: 0.75rem;
+}
+
+.login a {
+    font-size: 0.75rem;
+    margin: auto;
 }
