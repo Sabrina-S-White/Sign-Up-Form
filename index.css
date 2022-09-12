@@ -1,3 +1,5 @@
+/* Initial page styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +24,7 @@ body {
     width: 100vw;
 }
 
+/* Page layout */
 .leftDiv {
     height: 100%;   
     width: 60%;
@@ -79,6 +82,17 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+.login {
+    font-size: 0.75rem;
+}
+
+.login a {
+    font-size: 0.75rem;
+    margin: auto;
+}
+
+/* Form styling */
 
 .form {
     background-color: rgb(92, 180, 184);
@@ -147,11 +161,3 @@ button:hover {
     cursor: pointer;
 }
 
-.login {
-    font-size: 0.75rem;
-}
-
-.login a {
-    font-size: 0.75rem;
-    margin: auto;
-}
