@@ -73,7 +73,7 @@ img {
 .rightDiv {
     height: 100%;
     width: 40%;
-    background-color: rgba(255, 183, 3, 1);
+    background-color: rgba(243, 191, 70, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,8 +81,7 @@ img {
 }
 
 .form {
-    background-color: rgb(33, 158, 188);
- 
+    background-color: rgb(92, 180, 184);
     border-radius: 3px;
     width: 100%;
     padding: 50px;
@@ -94,9 +93,53 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
- 
+    font-size: 15px;
 }
   
-  .formRow input[type='text'] {
+.formRow input[type='text'],
+.formRow input[type='email'],
+.formRow input[type='tel'],
+.formRow input[type='password'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 75%;
+}
 
+.formRow input[type='text']:focus,
+.formRow input[type='email']:focus,
+.formRow input[type='tel']:focus,
+.formRow input[type='password']:focus {
+    border: 2px solid rgb(49, 112, 204);
+}
+
+.formRow input[type='text']:valid,
+.formRow input[type='email']:valid,
+.formRow input[type='tel']:valid,
+.formRow input[type='password']:valid {
+    border: 2px solid green;
+}
+
+.formRow input[type='text']:invalid,
+.formRow input[type='email']:invalid,
+.formRow input[type='tel']:invalid,
+.formRow input[type='password']:invalid {
+    border: 2px solid red;
+}
+
+button {
+    height: 2rem;
+    width: 6rem;
+    border-radius: 34% 66% 68% 32% / 76% 25% 75% 24%;
+    background-color: rgb(49, 112, 204);
+    border:none;
+}
+
+button:hover {
+    background-color: #8AAFE3;
+    color: #fff;
+    cursor: pointer;
 }
