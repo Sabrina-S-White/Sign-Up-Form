@@ -90,6 +90,7 @@ img {
 .login a {
     font-size: 0.75rem;
     margin: auto;
+    text-decoration: underline;
 }
 
 /* Form styling */
